@@ -8,5 +8,11 @@ fi
 
 (cd libdvbtee; ./build-auto.sh --prefix=`pwd`/usr/ "$@" --enable-static; make install)
 
-autoreconf --install
+mkdir -p m4
+if [ -e aclocal.m4 ]; then
+    echo "configuration installed..."
+else
+    autoreconf --install
+fi
+
 ./configure "$@" && make

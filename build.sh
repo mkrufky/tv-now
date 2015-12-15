@@ -7,3 +7,6 @@ if [ ! -d libdvbtee ] ; then
 fi
 
 (cd libdvbtee; ./build-auto.sh --prefix=`pwd`/usr/ "$@" --enable-static; make install)
+
+autoreconf --install
+./configure "$@" && make

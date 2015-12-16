@@ -1,5 +1,5 @@
-AM_CXXFLAGS  = -I../libdvbtee/usr/include -I../libdvbtee/libdvbtee -I../libdvbtee/libdvbtee_server
-AM_CFLAGS    = -I../libdvbtee/usr/include -I../libdvbtee/libdvbtee -I../libdvbtee/libdvbtee_server
+AM_CXXFLAGS  = -I../libdvbtee/usr/include -I../libdvbtee/libdvbtee -I../libdvbtee/libdvbtee_server -pthread
+AM_CFLAGS    = -I../libdvbtee/usr/include -I../libdvbtee/libdvbtee -I../libdvbtee/libdvbtee_server -pthread
 AM_CXXFLAGS += -D_POSIX -D_GNU_SOURCE -D__USE_LARGEFILE64 -D__STDC_FORMAT_MACROS -D_FILE_OFFSET_BITS=64
 AM_CFLAGS   += -D_POSIX -D_GNU_SOURCE -D__USE_LARGEFILE64 -D__STDC_FORMAT_MACROS -D_FILE_OFFSET_BITS=64
 

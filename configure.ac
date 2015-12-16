@@ -38,8 +38,6 @@ AC_CHECK_LIB([dvbtee_server], [main])
 AC_CHECK_LIB([hdhomerun], [main])
 # FIXME: Replace `main' with a function in `-ln':
 AC_CHECK_LIB([n], [main])
-# FIXME: Replace `main' with a function in `-lpthread':
-AC_CHECK_LIB([pthread], [main])
 
 # Checks for header files.
 AC_CHECK_HEADERS([arpa/inet.h fcntl.h inttypes.h malloc.h memory.h netdb.h netinet/in.h stddef.h stdint.h stdlib.h string.h sys/ioctl.h sys/socket.h sys/time.h unistd.h wchar.h])
